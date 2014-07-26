@@ -1,0 +1,15 @@
+{
+  "name": "derby-tutorials",
+  "description": "Derby.js tutorials from Decision Mapper",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dmapper/derby-tutorials.git"
+  },
+  "main": "index.js",
+  "engines": {
+    "node": "0.10.x"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

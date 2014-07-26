@@ -1,0 +1,14 @@
+.DS_Store
+/public/gen
+/lib/
+*.swp
+/node_modules/
+/.idea/
+.sass-cache
+Gemfile.lock
+/tmp/
+*.orig
+npm-debug.log
+
+# Derby bundle folder
+/public/derby/
