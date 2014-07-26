@@ -7,5 +7,7 @@ quickly.
 ## Copyright
 
 &copy; Decision Mapper 2014
+
 &copy; Artur Zayats
+
 &copy; Anastasiya Zhukova
