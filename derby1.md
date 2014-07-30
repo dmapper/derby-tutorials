@@ -313,4 +313,4 @@ We’re a bit ahead of time, but I think it’s reasonably necessary. In our nex
 For now, let’s play with the code. Add something to the template, change title (note that Derby supports live reloading, so as soon as you have changed data in html file the browser will reload the page automatically). Try to plug in styles. 
 
 **P.S.** 
-If you feel like reading standard Derby documentation, note that it’s written for v0.5 and some parts are outdated. However, it would be useful to read about controllers and models. However,  I recommend not reading: views, templates, components. These parts have changed so reading them will probably confuse you. 
+If you feel like reading standard Derby documentation, note that it’s written for v0.5 and some parts are outdated. However, it would be useful to read about controllers and models. Still, I recommend not reading: views, templates, components. These parts have changed so reading them will probably confuse you. 
