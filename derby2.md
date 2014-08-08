@@ -336,7 +336,7 @@ Let’s check whether it’s an empty string or not, add the task in the collect
 on-submit="addTodo(_page.newTodo, $event, $element)"
 ```
 
-`$event` и `$element` are arguments which are automatically filled by derby.
+`$event` and `$element` are arguments which are automatically filled by derby.
  
 Now, let’s get to the filtered task list and edit ul element. 
 
