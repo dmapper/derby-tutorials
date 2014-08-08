@@ -373,9 +373,11 @@ So, `this.model` in the component has model of this particular component only. H
 MyComponent.prototype.back = function(){
   this.app.history.back();
 }
+```
 
 Using dom we can add handlers to DOM-events, e.g.:
 
+```js
 // https://github.com/codeparty/d-bootstrap/blob/master/dropdown/index.js
 Dropdown.prototype.create = function(model, dom) {
   // Close on click outside of the dropdown
