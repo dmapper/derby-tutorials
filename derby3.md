@@ -1,4 +1,4 @@
-# Learning Derby 0.6, example #3
+# Tutorial. Learning Derby 0.6. Server side and Authentication
 
 This tutorial consists of 2 parts:
  
