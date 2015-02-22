@@ -101,10 +101,9 @@ When clicking it, `deleteGames` function is triggered.
 
 ```coffee
 app.proto.deleteGames = ->
-  @model.subscribe 'games', =>
-    games = @model.get 'games'
-    for key of games
-      @model.del "games.#{key}"
+  games = @model.get 'games'
+  for key of games
+    @model.del "games.#{key}"
 ```
 
 We need to loop through games deleting each game from `games` collection. It is necessary to subscribe for `games` and set it into a variable. `for of` loop goes through each game and `model.del` deletes each game. Notice that in the last line we used double quotes. String in double quotes supports interpolation. In this case, we interpolate key, that is game id.
@@ -516,10 +515,9 @@ app.get '/game/:gameId/results', (page, model, params) ->
     page.render 'results'
 
 app.proto.deleteGames = ->
-  @model.subscribe 'games', =>
-    games = @model.get 'games'
-    for key of games
-      @model.del "games.#{key}"
+  games = @model.get 'games'
+  for key of games
+    @model.del "games.#{key}"
 
 app.proto.setUserName = ->
   userId = this.model.get '_session.userId'
