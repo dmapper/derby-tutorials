@@ -11,8 +11,8 @@ The professor creates a question: “Guess the number of jelly beans in the jar.
 Create a project using `generator-derby`:
  
 ```bash 
-$ sudo install -g yo
-$ sudo install -g generator-derby
+$ sudo npm install -g yo
+$ sudo npm install -g generator-derby
 $ mkdir my-app
 $ cd my-app
 $ yo derby --coffee
