@@ -317,7 +317,7 @@ NewTodo.prototype.addNewTodo = function(todo){
 }
 ```
 
-The component has predetermined functions which are called at certain points, that is, create, init and destroy. 
+The component has predetermined functions which are called at certain points, that is, create and init. Also there is a 'destroy'-event. It's also useful. 
 
 ### init()
 
@@ -355,13 +355,25 @@ BarChart.prototype.init = function() {
 };
 ```
 
-### destroy()
+### destroy-event
 
 It is called when the component is being destroyed. We need it for final clean-up:
 
-1. release memory 
-2. stop reactive functions
-3. remove client libraries. 
+1. stop things like setInterval
+2. remove client libraries. 
+
+for example:
+
+```js
+
+MyComponent.prototype.create = function(){
+  var intervalId = setIterval myFunc, 1000
+  
+  this.on('destroy', function(){
+    clearInterval(intervalId);
+  });
+}
+```
 
 this inside the component handlers has: `model`, `app`, `dom` (except `init`), all aliases to dom-elements and components created within the component, parent-reference to parent-component and everything we put inside prototype function-constructor of the component. 
 
