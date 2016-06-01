@@ -365,17 +365,18 @@ It is called when the component is being destroyed. We need it for final clean-u
 for example:
 
 ```js
-
 MyComponent.prototype.create = function(){
-  var intervalId = setIterval myFunc, 1000
-  
+  var intervalId = setInterval(function (){
+    console.log(Date.now());
+  }, 500);
+
   this.on('destroy', function(){
     clearInterval(intervalId);
   });
 }
 ```
 
-this inside the component handlers has: `model`, `app`, `dom` (except `init`), all aliases to dom-elements and components created within the component, parent-reference to parent-component and everything we put inside prototype function-constructor of the component. 
+This inside the component handlers has: `model`, `app`, `dom` (except `init`), all aliases to dom-elements and components created within the component, parent-reference to parent-component and everything we put inside prototype function-constructor of the component. 
 
 So, `this.model` in the component has model of this particular component only. Here, model is a scoped one. If you need to address the global scope, use `this.model.root` or `this.app.model`.
 
